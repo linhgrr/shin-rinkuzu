@@ -1,5 +1,4 @@
 export const imgImage2 = "/assets/imgImage2.png";
-export const imgRisoBackTexture = "/assets/imgRisoBackTexture.jpg";
 export const imgCharacterImg = "/assets/imgCharacterImg.png";
 export const imgChatGptImageApr22026At121506Am1 = "/assets/imgChatGptImageApr22026At121506Am1.png";
 export const imgBackground = "/assets/imgBackground.png";

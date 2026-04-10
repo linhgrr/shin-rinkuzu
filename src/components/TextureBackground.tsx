@@ -5,9 +5,7 @@ import {
   imgGroup5, 
   imgGroup6, 
   imgGroup7,
-  imgImage1,
-  imgImage2,
-  imgRisoBackTexture
+  imgImage2
 } from '../constants/images';
 
 export default function TextureBackground() {
@@ -20,7 +18,7 @@ export default function TextureBackground() {
           <div className="flex-none rotate-90">
             <div className="opacity-20 w-[6295px] h-[1920px]" 
                  style={{ 
-                   backgroundImage: `url('${imgRisoBackTexture}')`,
+                   backgroundImage: `url('/assets/imgRisoBackTexture.jpg')`,
                    backgroundSize: '336.89px 449.19px',
                    backgroundPosition: 'top left'
                  }} 
