@@ -1,4 +1,5 @@
 import { imgCharacterImg, imgGroup } from '../constants/images';
+import { AnimatedText } from './ui/animated-shiny-text';
 
 export default function Hero() {
   return (
@@ -9,12 +10,14 @@ export default function Hero() {
         
         {/* Main Title - Responsive text sizing */}
         <div className="w-full xl:w-[1090px] mt-24 xl:mt-[254px]">
-          <h1 
-            className="font-vina-sans text-[70px] sm:text-[90px] md:text-[120px] xl:text-[164px] leading-[0.9] text-transparent bg-clip-text bg-gradient-to-b from-[#e9d8d6] from-[72%] to-[#e49d7f]"
-            style={{ filter: 'drop-shadow(4px 4px 0px #542607)' }}
-          >
-            YOUR AI-POWERED LEARNING COMPANION
-          </h1>
+          <AnimatedText 
+            text="YOUR AI-POWERED LEARNING COMPANION"
+            className="py-0 justify-start"
+            textClassName="font-vina-sans text-[70px] sm:text-[90px] md:text-[120px] xl:text-[164px] leading-[0.9] text-left"
+            gradientColors="linear-gradient(90deg, #e9d8d6 0%, #e49d7f 50%, #e9d8d6 100%)"
+            gradientAnimationDuration={5}
+            textStyle={{ filter: 'drop-shadow(4px 4px 0px #542607)' }}
+          />
         </div>
         
         {/* Subtitle & CTA */}
@@ -45,11 +48,13 @@ export default function Hero() {
       {/* Right Content - 3D Character */}
       <div className="flex-none w-full xl:w-[527px] flex items-center justify-center xl:absolute xl:-right-[20px] xl:top-[80px] mt-12 xl:mt-0 z-10 pointer-events-none">
         <div className="relative w-full max-w-[527px] xl:w-[527px] aspect-[1/2] xl:aspect-auto xl:h-[1084px] scale-x-[-1]">
-          <img 
-            alt="AI Character" 
-            className="absolute inset-0 w-full h-full object-cover drop-shadow-2xl" 
-            src={imgCharacterImg} 
-          />
+          <div className="absolute inset-0 will-change-transform motion-safe:animate-float-bob motion-reduce:animate-none">
+            <img 
+              alt="AI Character" 
+              className="absolute inset-0 w-full h-full object-cover drop-shadow-2xl" 
+              src={imgCharacterImg} 
+            />
+          </div>
         </div>
       </div>
       

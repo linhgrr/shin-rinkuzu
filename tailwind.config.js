@@ -23,7 +23,16 @@ export default {
       },
       backgroundImage: {
         'gradient-text': 'linear-gradient(177deg, rgb(255, 255, 255) 1.304%, rgb(153, 153, 153) 98.696%)',
-      }
+      },
+      keyframes: {
+        'float-bob': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-14px)' },
+        },
+      },
+      animation: {
+        'float-bob': 'float-bob 3.6s ease-in-out infinite',
+      },
     },
   },
   plugins: [],
